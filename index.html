@@ -28,6 +28,7 @@
                                 class="form-control"
                                 value=""
                                 name="bookTitle"
+                                required
                             />
                         </div>
                         <div class="col">
@@ -40,6 +41,7 @@
                                 class="form-control"
                                 value=""
                                 name="bookAuthor"
+                                required
                             />
                         </div>
                         <div class="col">
@@ -54,6 +56,7 @@
                                 name="yrReleased"
                                 min="1620" 
                                 max="2025"
+                                required
                             />
                         </div>
                     </div>
@@ -65,6 +68,8 @@
                                     class="form-check-input"
                                     id="hardBack"
                                     name="bookFormat"
+                                    value="hard-back"
+                                    checked
                                 />
                                 <label for="hardBack" class="form-check-label text-capitalize">
                                     hard back
@@ -76,6 +81,7 @@
                                     class="form-check-input"
                                     id="paperBack"
                                     name="bookFormat"
+                                    value="paper-back"
                                 />
                                 <label for="paperBack" class="form-check-label text-capitalize">
                                     paper back
@@ -87,6 +93,7 @@
                                     class="form-check-input"
                                     id="digital"
                                     name="bookFormat"
+                                    value="digital"
                                 />
                                 <label for="digital" class="form-check-label text-capitalize">
                                     digital
@@ -98,6 +105,7 @@
                                     class="form-check-input"
                                     id="audio"
                                     name="bookFormat"
+                                    value="audio"
                                 />
                                 <label for="audio" class="form-check-label text-capitalize">
                                     audio
@@ -111,6 +119,8 @@
                                     class="form-check-input"
                                     id="fiction"
                                     name="category"
+                                    value="fiction"
+                                    checked
                                 />
                                 <label for="fiction" class="form-check-label text-capitalize">
                                     fiction
@@ -122,6 +132,7 @@
                                     class="form-check-input"
                                     id="nonfiction"
                                     name="category"
+                                    value="nonfiction"
                                 />
                                 <label for="nonfiction" class="form-check-label text-capitalize">
                                     nonfiction
@@ -132,12 +143,12 @@
                     <div class="row">
                         <div class="col">
                             <p class="form-text fst-italic">
-                                Genres *select all that apply
+                                genres *select all that apply
                             </p>
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="fantasy"
                                     class="form-check-input"
                                     id="fantasy"
@@ -149,7 +160,7 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="children"
                                     class="form-check-input"
                                     id="children"
@@ -161,7 +172,7 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="childrens"
                                     class="form-check-input"
                                     id="childrens"
@@ -173,7 +184,7 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="classic"
                                     class="form-check-input"
                                     id="classic"
@@ -185,7 +196,7 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="history"
                                     class="form-check-input"
                                     id="history"
@@ -197,7 +208,7 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="self-help"
                                     class="form-check-input"
                                     id="self-help"
@@ -209,7 +220,7 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="poetry"
                                     class="form-check-input"
                                     id="poetry"
@@ -221,7 +232,7 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="graphicNovel"
                                     class="form-check-input"
                                     id="graphicNovel"
@@ -233,7 +244,7 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="biography"
                                     class="form-check-input"
                                     id="biography"
@@ -245,19 +256,19 @@
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="horror"
                                     class="form-check-input"
                                     id="horror"
                                 />
                                 <label for="horror" class="form-check-label">
-                                    Biography
+                                    Horror
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input 
                                     type="checkbox"
-                                    name="genres"
+                                    name="genre"
                                     value="science"
                                     class="form-check-input"
                                     id="science"
@@ -269,7 +280,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <button class="btn btn-danger text-capitalize" type="submit">submit</button>
+                        <button class="btn btn-danger text-capitalize" type="submit" id="submitBtn">submit</button>
                     </div>
                 </form>
             </div>
